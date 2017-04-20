@@ -48,6 +48,11 @@ class ViewController: UIViewController {
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     
+    for image in images {
+        image.layer.anchorPoint.y = 0.0
+        image.frame = view.bounds
+        view.addSubview(image)
+    }
   }
   
   @IBAction func toggleGallery(_ sender: AnyObject) {
