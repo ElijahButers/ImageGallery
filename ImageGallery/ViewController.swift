@@ -53,6 +53,8 @@ class ViewController: UIViewController {
         image.frame = view.bounds
         view.addSubview(image)
     }
+    
+    navigationItem.title = images.last?.title
   }
   
   @IBAction func toggleGallery(_ sender: AnyObject) {
