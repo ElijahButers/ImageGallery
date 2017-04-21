@@ -64,6 +64,12 @@ class ViewController: UIViewController {
   @IBAction func toggleGallery(_ sender: AnyObject) {
     
     var imageYOffset: CGFloat = 50.0
+    
+    for subview in view.subviews {
+        if let image = subview as? ImageViewCard {
+            //
+        }
+    }
   }
   
 }
