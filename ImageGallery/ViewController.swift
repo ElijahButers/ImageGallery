@@ -63,7 +63,7 @@ class ViewController: UIViewController {
   
   @IBAction func toggleGallery(_ sender: AnyObject) {
     
-    
+    var imageYOffset: CGFloat = 50.0
   }
   
 }
