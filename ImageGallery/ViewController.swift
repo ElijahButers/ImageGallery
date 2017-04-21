@@ -67,7 +67,7 @@ class ViewController: UIViewController {
     
     for subview in view.subviews {
         if let image = subview as? ImageViewCard {
-            //
+            var imageTransform = CATransform3DIdentity
         }
     }
   }
