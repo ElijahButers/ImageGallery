@@ -68,6 +68,8 @@ class ViewController: UIViewController {
     for subview in view.subviews {
         if let image = subview as? ImageViewCard {
             var imageTransform = CATransform3DIdentity
+            
+            imageTransform = CATransform3DTranslate(imageTransform, 0.0, imageYOffset, 0.0)
         }
     }
   }
