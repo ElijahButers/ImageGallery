@@ -72,6 +72,7 @@ class ViewController: UIViewController {
             imageTransform = CATransform3DTranslate(imageTransform, 0.0, imageYOffset, 0.0)
             imageTransform = CATransform3DScale(imageTransform, 0.95, 0.6, 1.0)
             imageTransform = CATransform3DRotate(imageTransform, CGFloat(M_PI_4/2), -1.0, 0.0, 0.0)
+            image.layer.transform = imageTransform
         }
     }
   }
