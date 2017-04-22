@@ -70,6 +70,7 @@ class ViewController: UIViewController {
             var imageTransform = CATransform3DIdentity
             
             imageTransform = CATransform3DTranslate(imageTransform, 0.0, imageYOffset, 0.0)
+            imageTransform = CATransform3DScale(imageTransform, 0.95, 0.6, 1.0)
         }
     }
   }
