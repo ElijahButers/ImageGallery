@@ -73,6 +73,7 @@ class ViewController: UIViewController {
             imageTransform = CATransform3DScale(imageTransform, 0.95, 0.6, 1.0)
             imageTransform = CATransform3DRotate(imageTransform, CGFloat(M_PI_4/2), -1.0, 0.0, 0.0)
             image.layer.transform = imageTransform
+            imageYOffset += view.frame.height / CGFloat(images.count)
         }
     }
   }
