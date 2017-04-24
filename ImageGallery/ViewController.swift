@@ -89,7 +89,11 @@ class ViewController: UIViewController {
         for subview in view.subviews {
             if let image = subview as? ImageViewCard {
                 if image === selectedImage {
-                    //selected image
+                    UIView.animate(withDuration: 0.33, delay: 0.0, options: .curveEaseIn, animations: {
+                        image.layer.transform = CATransform3DIdentity
+                    }, completion: { _ in
+                        self.view.bringSubview(toFront: image)
+                    })
                 } else {
                     UIView.animate(withDuration: 0.33, delay: 0.0, options: .curveEaseIn, animations: {
                         image.alpha = 0.0
