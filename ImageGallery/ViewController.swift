@@ -51,6 +51,7 @@ class ViewController: UIViewController {
     for image in images {
         image.layer.anchorPoint.y = 0.0
         image.frame = view.bounds
+        image.didSelect = selectImage
         view.addSubview(image)
     }
     
