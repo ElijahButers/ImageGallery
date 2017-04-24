@@ -83,5 +83,18 @@ class ViewController: UIViewController {
         }
     }
   }
+    
+    func selectImage(selectedImage: ImageViewCard) {
+        
+        for subview in view.subviews {
+            if let image = subview as? ImageViewCard {
+                if image === selectedImage {
+                    //selected image
+                } else {
+                    // any other image
+                }
+            }
+        }
+    }
   
 }
