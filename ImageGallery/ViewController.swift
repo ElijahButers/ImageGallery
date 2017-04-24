@@ -104,6 +104,7 @@ class ViewController: UIViewController {
                 }
             }
         }
+        self.navigationItem.title = selectedImage.title
     }
   
 }
