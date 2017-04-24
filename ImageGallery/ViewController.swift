@@ -91,7 +91,12 @@ class ViewController: UIViewController {
                 if image === selectedImage {
                     //selected image
                 } else {
-                    // any other image
+                    UIView.animate(withDuration: 0.33, delay: 0.0, options: .curveEaseIn, animations: {
+                        image.alpha = 0.0
+                    }, completion: { _ in
+                        image.alpha = 1
+                        image.layer.transform = CATransform3DIdentity
+                    })
                 }
             }
         }
