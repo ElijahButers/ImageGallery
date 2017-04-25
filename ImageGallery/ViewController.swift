@@ -24,6 +24,8 @@ import UIKit
 import QuartzCore
 
 class ViewController: UIViewController {
+    
+    var isGalleryOpen = false
   
   let images = [
     ImageViewCard(imageNamed: "Hurricane_Katia.jpg", title: "Hurricane Katia"),
