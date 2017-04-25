@@ -101,6 +101,8 @@ class ViewController: UIViewController {
             imageYOffset += view.frame.height / CGFloat(images.count)
         }
     }
+    
+    isGalleryOpen = true
   }
     
     func selectImage(selectedImage: ImageViewCard) {
