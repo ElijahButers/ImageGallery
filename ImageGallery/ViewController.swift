@@ -70,7 +70,7 @@ class ViewController: UIViewController {
         for subview in view.subviews {
             if let image = subview as? ImageViewCard {
                 
-                let animation = CABasicAnimation(keyPath: "transfrom")
+                let animation = CABasicAnimation(keyPath: "transform")
                 animation.fromValue = NSValue(caTransform3D: image.layer.transform)
                 animation.toValue = NSValue(caTransform3D: CATransform3DIdentity)
                 animation.duration = 0.33
